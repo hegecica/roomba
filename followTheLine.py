@@ -37,8 +37,8 @@ def fwdcycle():
     GPIO.output(bin2, GPIO.LOW)
     leftmotor.start(0)
     rightmotor.start(0)
-    leftmotor.ChangeDutyCycle(70)
-    rightmotor.ChangeDutyCycle(70)
+    leftmotor.ChangeDutyCycle(50)
+    rightmotor.ChangeDutyCycle(50)
 
 
 def backward():
@@ -84,6 +84,17 @@ def main():
         lsens = GPIO.input(left)
         csens = GPIO.input(cent)
         rsens = GPIO.input(rght)
+
+        if lsens == 0 and csens == 1 and rsens == 0:
+            fwdcycle()
+        elif lsens == 1 and csens == 1 and rsens == 0:
+            turnleft()
+        elif lsens == 0 and csens == 1 and rsens == 1:
+            turnright()
+        elif lsens == 1 and csens == 1 and rsens == 1:
+            fwdcycle()
+        elif lsens == 0 and csens == 0 and rsens == 0:
+            stop()
         print(lsens, csens, rsens)
 
 
