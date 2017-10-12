@@ -28,7 +28,7 @@ def fwdcycle():
     GPIO.output(ain1, GPIO.LOW)
     GPIO.output(ain2, GPIO.HIGH)
     GPIO.output(bin1, GPIO.HIGH)
-    GPIO.output(bin2, GPIO.HIGH)
+    GPIO.output(bin2, GPIO.LOW)
     leftmotor.start(0)
     rightmotor.start(0)
     leftmotor.ChangeDutyCycle(40)
