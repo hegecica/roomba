@@ -33,7 +33,17 @@ def fwdcycle():
     rightmotor.start(0)
     leftmotor.ChangeDutyCycle(40)
     rightmotor.ChangeDutyCycle(40)
-    print('FWD')
+
+
+def reverse():
+    GPIO.output(ain1, GPIO.HIGH)
+    GPIO.output(ain2, GPIO.LOW)
+    GPIO.output(bin1, GPIO.LOW)
+    GPIO.output(bin2, GPIO.HIGH)
+    leftmotor.start(0)
+    rightmotor.start(0)
+    leftmotor.ChangeDutyCycle(40)
+    rightmotor.ChangeDutyCycle(40)
 
 
 def stop():
@@ -44,7 +54,11 @@ def stop():
 
 def main():
     fwdcycle()
-    time.sleep(1)
+    time.sleep(2)
+    stop()
+    time.sleep(0.1)
+    reverse()
+    time.sleep(2)
     stop()
 
 
