@@ -100,22 +100,16 @@ def main():
         direction = getch()
         if direction == 'w':
             fwdcycle()
-            time.sleep(0.2)
-            stop()
         elif direction == 's':
             backward()
-            time.sleep(0.2)
-            stop()
         elif direction == 'a':
             left()
-            time.sleep(0.2)
-            stop()
         elif direction == 'd':
             right()
-            time.sleep(0.2)
-            stop()
         else:
             print('INVALID:', direction)
+        time.sleep(0.1)
+        stop()
 
 
 main()
