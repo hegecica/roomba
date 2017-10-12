@@ -95,7 +95,8 @@ def getch():
 
 
 def main():
-    while True:
+    direction = ''
+    while direction is not '\x03':
         direction = getch()
         if direction == 'w':
             fwdcycle()
