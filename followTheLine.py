@@ -37,8 +37,8 @@ def fwdcycle():
     GPIO.output(bin2, GPIO.LOW)
     leftmotor.start(0)
     rightmotor.start(0)
-    leftmotor.ChangeDutyCycle(30)
-    rightmotor.ChangeDutyCycle(30)
+    leftmotor.ChangeDutyCycle(50)
+    rightmotor.ChangeDutyCycle(50)
 
 
 def backward():
@@ -59,8 +59,8 @@ def turnleft():
     GPIO.output(bin2, GPIO.LOW)
     leftmotor.start(0)
     rightmotor.start(0)
-    leftmotor.ChangeDutyCycle(10)
-    rightmotor.ChangeDutyCycle(10)
+    leftmotor.ChangeDutyCycle(25)
+    rightmotor.ChangeDutyCycle(25)
 
 
 def turnright():
@@ -70,8 +70,8 @@ def turnright():
     GPIO.output(bin2, GPIO.HIGH)
     leftmotor.start(0)
     rightmotor.start(0)
-    leftmotor.ChangeDutyCycle(10)
-    rightmotor.ChangeDutyCycle(10)
+    leftmotor.ChangeDutyCycle(25)
+    rightmotor.ChangeDutyCycle(25)
 
 
 def stop():
