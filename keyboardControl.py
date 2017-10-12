@@ -96,7 +96,7 @@ def getch():
 
 def main():
     direction = ''
-    while direction is not '\x03':
+    while direction != "\x03":
         direction = getch()
         if direction == 'w':
             fwdcycle()
@@ -106,10 +106,11 @@ def main():
             left()
         elif direction == 'd':
             right()
+        elif direction == 'x':
+            stop()
         else:
             print('INVALID:', direction)
-        time.sleep(0.1)
-        stop()
+    stop()
 
 
 main()
