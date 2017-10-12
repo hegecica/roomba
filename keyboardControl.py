@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 import sys
 import termios
 import tty
+import time
 # Pins for the LEFT motor
 ain1 = 17
 ain2 = 27
@@ -114,3 +115,6 @@ def main():
             stop()
         else:
             print('INVALID')
+
+
+main()
