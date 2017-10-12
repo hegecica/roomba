@@ -68,10 +68,10 @@ def left():
 
 
 def right():
-    GPIO.output(ain1, GPIO.HIGH)
-    GPIO.output(ain2, GPIO.LOW)
-    GPIO.output(bin1, GPIO.HIGH)
-    GPIO.output(bin2, GPIO.LOW)
+    GPIO.output(ain1, GPIO.LOW)
+    GPIO.output(ain2, GPIO.HIGH)
+    GPIO.output(bin1, GPIO.LOW)
+    GPIO.output(bin2, GPIO.HIGH)
     leftmotor.start(0)
     rightmotor.start(0)
     leftmotor.ChangeDutyCycle(30)
@@ -114,7 +114,7 @@ def main():
             time.sleep(0.2)
             stop()
         else:
-            print('INVALID')
+            print('INVALID:', direction)
 
 
 main()
