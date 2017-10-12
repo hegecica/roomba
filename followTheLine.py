@@ -84,7 +84,7 @@ def main():
         lsens = GPIO.input(left)
         csens = GPIO.input(cent)
         rsens = GPIO.input(rght)
-        print(lsens, csens, rsens, sep=' , ')
+        print(lsens, csens, rsens)
 
 
 main()
