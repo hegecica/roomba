@@ -59,7 +59,7 @@ def turnleft():
     GPIO.output(bin2, GPIO.LOW)
     leftmotor.start(0)
     rightmotor.start(0)
-    leftmotor.ChangeDutyCycle(25)
+    leftmotor.ChangeDutyCycle(0)
     rightmotor.ChangeDutyCycle(25)
 
 
@@ -71,7 +71,7 @@ def turnright():
     leftmotor.start(0)
     rightmotor.start(0)
     leftmotor.ChangeDutyCycle(25)
-    rightmotor.ChangeDutyCycle(25)
+    rightmotor.ChangeDutyCycle(0)
 
 
 def stop():
