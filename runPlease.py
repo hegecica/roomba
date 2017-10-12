@@ -27,7 +27,7 @@ rightmotor = GPIO.PWM(pwmb, 50)
 def fwdcycle():
     GPIO.output(ain1, GPIO.LOW)
     GPIO.output(ain2, GPIO.HIGH)
-    GPIO.output(bin1, GPIO.LOW)
+    GPIO.output(bin1, GPIO.HIGH)
     GPIO.output(bin2, GPIO.HIGH)
     leftmotor.start(0)
     rightmotor.start(0)
