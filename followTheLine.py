@@ -52,7 +52,7 @@ def backward():
     rightmotor.ChangeDutyCycle(70)
 
 
-def left():
+def turnleft():
     GPIO.output(ain1, GPIO.HIGH)
     GPIO.output(ain2, GPIO.LOW)
     GPIO.output(bin1, GPIO.HIGH)
@@ -63,7 +63,7 @@ def left():
     rightmotor.ChangeDutyCycle(30)
 
 
-def right():
+def turnright():
     GPIO.output(ain1, GPIO.LOW)
     GPIO.output(ain2, GPIO.HIGH)
     GPIO.output(bin1, GPIO.LOW)
