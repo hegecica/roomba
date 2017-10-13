@@ -2,7 +2,7 @@ import cherrypy
 import RPi.GPIO as GPIO
 import time
 
-file = open('htmlfile.html')
+file = open('4directions.html')
 index_html = file.read()
 file.close()
 
