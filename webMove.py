@@ -123,3 +123,7 @@ class MotorControl(object):
     def nomove(self):
         stop()
         return index_html
+
+
+cherrypy.server.socket_host = "0.0.0.0"  # 0.0.0.0 =>  listen on all interfaces
+cherrypy.quickstart(MotorControl())
