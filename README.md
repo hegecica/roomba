@@ -34,3 +34,9 @@ webMove.py:
 > CherryPy + Roomba + 4directions.html = You can control the _Beast_ from your browser! Woohoo!
 >
 >Usage: You press a direction, Roomba starts to run for 1 sec. That's it. _We don't really like to overcomplicate things._
+
+# Contact:
+
+If something is really unclear, and you **REALLY** want to steal something... Well... Just ask us and as we are nice and helpful we might help you to understand things.
+
+Oh. One more thing. If you are going to use our code please let us know... And maybe buy us a beer ;) We can send a PayPal link if you want ;)
