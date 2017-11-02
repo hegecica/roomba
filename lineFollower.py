@@ -21,21 +21,21 @@ def main():
         rsens = GPIO.input(rght)
 
         if lsens == 0 and csens == 0 and rsens == 0:
-            roomba.moveBackward(60)
+            roomba.moveBackward(80)
         elif lsens == 0 and csens == 0 and rsens == 1:
-            roomba.turnRight(40)
+            roomba.turnRight(60)
         elif lsens == 0 and csens == 1 and rsens == 0:
-            roomba.moveForward(60)
+            roomba.moveForward(80)
         elif lsens == 0 and csens == 1 and rsens == 1:
-            roomba.softRight(40)
+            roomba.softRight(60)
         elif lsens == 1 and csens == 0 and rsens == 0:
-            roomba.turnLeft(40)
+            roomba.turnLeft(60)
         elif lsens == 1 and csens == 0 and rsens == 1:
             roomba.stop()
         elif lsens == 1 and csens == 1 and rsens == 0:
-            roomba.softLeft(40)
+            roomba.softLeft(60)
         elif lsens == 1 and csens == 1 and rsens == 1:
-            roomba.moveForward(60)
+            roomba.moveForward(80)
 
 
 main()
