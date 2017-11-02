@@ -23,19 +23,19 @@ def main():
         if lsens == 0 and csens == 0 and rsens == 0:
             roomba.stop()
         elif lsens == 0 and csens == 0 and rsens == 1:
-            roomba.turnRight(25)
+            roomba.turnRight(15)
         elif lsens == 0 and csens == 1 and rsens == 0:
-            roomba.moveForward(35)
+            roomba.moveForward(30)
         elif lsens == 0 and csens == 1 and rsens == 1:
-            roomba.softRight(25)
+            roomba.softRight(15)
         elif lsens == 1 and csens == 0 and rsens == 0:
-            roomba.turnLeft(25)
+            roomba.turnLeft(15)
         elif lsens == 1 and csens == 0 and rsens == 1:
             print("THIS SHOULD NEVER HAPPEN!!!")
         elif lsens == 1 and csens == 1 and rsens == 0:
-            roomba.softLeft(25)
+            roomba.softLeft(15)
         elif lsens == 1 and csens == 1 and rsens == 1:
-            roomba.moveForward(35)
+            roomba.moveForward(30)
         print(lsens, csens, rsens)
 
 
