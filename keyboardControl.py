@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import sys
 import termios
 import tty
-import time
+# import time
 # Pins for the LEFT motor
 ain1 = 17
 ain2 = 27
