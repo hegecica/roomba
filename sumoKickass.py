@@ -59,4 +59,5 @@ def main():
                 time.sleep(0.5)
         else:
             roomba.softLeft(50)
+        time.sleep(0.1)
     return True
