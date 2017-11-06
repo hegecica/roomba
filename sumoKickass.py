@@ -45,15 +45,13 @@ def areWeClear():
 
     if csens == 0:
         return True
-    else:
-        return False
 
 
 def main():
     while True:
         if distance() < 50:
             roomba.moveForward(100)
-            if areWeClear() is False:
+            if areWeClear() is not True:
                 roomba.moveBackward(100)
                 time.sleep(0.5)
         else:
