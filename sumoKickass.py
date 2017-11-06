@@ -6,8 +6,8 @@ import roomba
 left = 10
 cent = 9
 rght = 11
-sonarout = 98
-sonarin = 99
+sonarout = 14
+sonarin = 15
 # GPIO general setup
 GPIO.setwarnings(True)
 GPIO.setmode(GPIO.BCM)
