@@ -23,17 +23,17 @@ def main():
         if lsens == 0 and csens == 0 and rsens == 0:
             roomba.moveBackward(100)
         elif lsens == 0 and csens == 0 and rsens == 1:
-            roomba.turnRight(40)
+            roomba.turnRight(30)
         elif lsens == 0 and csens == 1 and rsens == 0:
             roomba.moveForward(100)
         elif lsens == 0 and csens == 1 and rsens == 1:
-            roomba.softRight(40)
+            roomba.softRight(25)
         elif lsens == 1 and csens == 0 and rsens == 0:
-            roomba.turnLeft(40)
+            roomba.turnLeft(30)
         elif lsens == 1 and csens == 0 and rsens == 1:
             roomba.stop()
         elif lsens == 1 and csens == 1 and rsens == 0:
-            roomba.softLeft(40)
+            roomba.softLeft(25)
         elif lsens == 1 and csens == 1 and rsens == 1:
             roomba.moveForward(100)
 
