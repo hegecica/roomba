@@ -20,6 +20,8 @@ def main():
         csens = GPIO.input(cent)
         rsens = GPIO.input(rght)
 
+        print(lsens, csens, rsens)
+
         if lsens == 0 and csens == 0 and rsens == 0:
             roomba.moveBackward(100)
             print("BCK")
