@@ -24,17 +24,12 @@ def main():
             roomba.moveBackward(100)
             print("BCK")
         elif lsens == 0 and csens == 0 and rsens == 1:
-<<<<<<< HEAD
             roomba.turnRight(30)
             print("RGHT")
-=======
-            roomba.turnRight(20)
->>>>>>> add828d8f6f594423e7ceeb74623b9b50898d037
         elif lsens == 0 and csens == 1 and rsens == 0:
             roomba.moveForward(100)
             print("FWD")
         elif lsens == 0 and csens == 1 and rsens == 1:
-<<<<<<< HEAD
             roomba.softRight(25)
             print("SRGHT")
         elif lsens == 1 and csens == 0 and rsens == 0:
@@ -45,15 +40,6 @@ def main():
         elif lsens == 1 and csens == 1 and rsens == 0:
             roomba.softLeft(25)
             print("SLEFT")
-=======
-            roomba.softRight(15)
-        elif lsens == 1 and csens == 0 and rsens == 0:
-            roomba.turnLeft(20)
-        elif lsens == 1 and csens == 0 and rsens == 1:
-            roomba.stop()
-        elif lsens == 1 and csens == 1 and rsens == 0:
-            roomba.softLeft(15)
->>>>>>> add828d8f6f594423e7ceeb74623b9b50898d037
         elif lsens == 1 and csens == 1 and rsens == 1:
             roomba.moveForward(100)
             print("FWD")
