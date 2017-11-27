@@ -1,4 +1,3 @@
-import RPi.GPIO as GPIO
 import sys
 import termios
 import tty
