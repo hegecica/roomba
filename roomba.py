@@ -35,8 +35,8 @@ GPIO.setup(rght, GPIO.IN)
 
 
 def moveForward(dutyCycle):
-    GPIO.output(ain1, GPIO.LOW)
-    GPIO.output(ain2, GPIO.HIGH)
+    GPIO.output(ain1, GPIO.HIGH)
+    GPIO.output(ain2, GPIO.LOW)
     GPIO.output(bin1, GPIO.HIGH)
     GPIO.output(bin2, GPIO.LOW)
     leftmotor.start(0)
@@ -46,8 +46,8 @@ def moveForward(dutyCycle):
 
 
 def moveBackward(dutyCycle):
-    GPIO.output(ain1, GPIO.HIGH)
-    GPIO.output(ain2, GPIO.LOW)
+    GPIO.output(ain1, GPIO.LOW)
+    GPIO.output(ain2, GPIO.HIGH)
     GPIO.output(bin1, GPIO.LOW)
     GPIO.output(bin2, GPIO.HIGH)
     leftmotor.start(0)
@@ -57,8 +57,8 @@ def moveBackward(dutyCycle):
 
 
 def turnLeft(dutyCycle):
-    GPIO.output(ain1, GPIO.HIGH)
-    GPIO.output(ain2, GPIO.LOW)
+    GPIO.output(ain1, GPIO.LOW)
+    GPIO.output(ain2, GPIO.HIGH)
     GPIO.output(bin1, GPIO.HIGH)
     GPIO.output(bin2, GPIO.LOW)
     leftmotor.start(0)
@@ -68,8 +68,8 @@ def turnLeft(dutyCycle):
 
 
 def softLeft(dutyCycle):
-    GPIO.output(ain1, GPIO.HIGH)
-    GPIO.output(ain2, GPIO.LOW)
+    GPIO.output(ain1, GPIO.LOW)
+    GPIO.output(ain2, GPIO.HIGH)
     GPIO.output(bin1, GPIO.HIGH)
     GPIO.output(bin2, GPIO.LOW)
     leftmotor.start(0)
@@ -79,8 +79,8 @@ def softLeft(dutyCycle):
 
 
 def turnRight(dutyCycle):
-    GPIO.output(ain1, GPIO.LOW)
-    GPIO.output(ain2, GPIO.HIGH)
+    GPIO.output(ain1, GPIO.HIGH)
+    GPIO.output(ain2, GPIO.LOW)
     GPIO.output(bin1, GPIO.LOW)
     GPIO.output(bin2, GPIO.HIGH)
     leftmotor.start(0)
@@ -90,8 +90,8 @@ def turnRight(dutyCycle):
 
 
 def softRight(dutyCycle):
-    GPIO.output(ain1, GPIO.LOW)
-    GPIO.output(ain2, GPIO.HIGH)
+    GPIO.output(ain1, GPIO.HIGH)
+    GPIO.output(ain2, GPIO.LOW)
     GPIO.output(bin1, GPIO.LOW)
     GPIO.output(bin2, GPIO.HIGH)
     leftmotor.start(0)
