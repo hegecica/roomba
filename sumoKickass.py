@@ -51,13 +51,13 @@ def main():
     while True:
         if areWeClear() is not True:
             while areWeClear() is not True:
-                roomba.moveBackward(100)
+                roomba.moveBackward(90)
                 time.sleep(0.2)
         else:
             while distance() < 50:
                 if areWeClear() is not True:
                     break
-                roomba.moveForward(100)
+                roomba.moveForward(90)
             while distance() >= 50:
                 if areWeClear() is not True:
                     break
