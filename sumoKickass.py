@@ -50,21 +50,18 @@ def areWeClear():
 def main():
     while True:
         if areWeClear() is not True:
-            lineTime = time.time()
-            timer = lineTime + 1
-            while areWeClear() is not True and lineTime < timer:
+            lineTime = time.time() + 1
+            while areWeClear() is not True and lineTime < time.time():
                 roomba.moveBackward(60)
         else:
             while distance() < 50:
                 if areWeClear() is not True:
                     break
-                attackTime = time.time()
-                delay = attackTime + 3
-                while attackTime < delay:
+                attackTime = time.time() + 3
+                while attackTime < time.time():
                     roomba.moveForward(100)
-                backUpTime = time.time()
-                backDelay = backUpTime + 1
-                while backUpTime < backDelay:
+                backUpTime = time.time() + 1
+                while backUpTime < time.time():
                     roomba.moveBackward(100)
             while distance() >= 50:
                 roomba.softLeft(40)
